@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   post("/insert_item", { :controller => "newitem", :action => "insert_item"})
 
+  get("/delete/:id", {:controller => "items", :action => "delete"})
+
 end
