@@ -1,6 +1,6 @@
 class FormController < ApplicationController
 
-  def insert_item
+  def display_form
     render({:template => "/item_templates/backdoor"})
   end 
 end
