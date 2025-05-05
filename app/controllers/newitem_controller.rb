@@ -1,7 +1,9 @@
 class NewitemController < ApplicationController
   http_basic_authenticate_with(
     name: "admin",
-    password: "secret")
+    password: "secret",
+    :only => [:insert_item]
+    )
     
     def insert_item
       i = Item.new
